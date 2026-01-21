@@ -36,4 +36,165 @@ body::-webkit-scrollbar-thumb{
 .topHeader .container{
     color: var(--white);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topHeaderLeft,
+.topHeaderRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topHeaderLeft .bx,
+.topHeaderRight .bx{
+   font-size: 20px;
+    vertical-align: middle;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    color: #fff;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: var(--white);
+    max-width: 180px;
+    box-shadow: 0 4px 8px(0,0,0,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index:100;
+}
+.dropdown-content a{
+    display: block;
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px 15px;
+    
+
+}
+.dropdown-content a:hover{
+    background: var(--primary-color);
+     /* background:#059473; */
+     color:var(--white);
+}
+.dropdown.active .dropdown-content{
+    display: block;
+
+}
+#mainHeader.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.9);
+    width: 100%;
+    z-index: 9999;
+    padding: 10px 100px;
+    max-width: 100%;
+}
+#mainHeader{
+    transition: all 0.5s ease;
+    
+}
+header{
+    background: var(--white);
+    box-shadow: 19px 8px 22px 15px 625a5a21;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(186, 140, 53, 0.5);
+}
+.menu li{
+  list-style: none;
+  padding: 20px;
+  float: left;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--black);
+}
+.menu li a:hover{
+    color: var(--primary-color);
+}
+.leftMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-wrapper{
+    position: relative;
+}
+.searchBtn{
+    width: 40px;
+    height: 10px;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 25px;
+}
+.searchBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 0;
+    /* overflow: hidden;      */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+.searchBox input{
+    border: none;
+    font-size: 16px;
+    width: 100px;
+}
+.searchBox i{
+    font-size: 22px;
+    cursor: pointer;
+}
+.searchBox.active{
+    width: 220px;
+}
+.searchBtn.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.7);
+
+}
+.dropdown .bx{
+    font-size: 25px;
+
+}
+.dropdown .bx:hover{
+ color: var(--primary-color);
+}
+.hamburger{
+    display: none;
 }
