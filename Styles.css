@@ -39,10 +39,17 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     align-items: center;
 }
+
+
 .topHeaderLeft,
 .topHeaderRight{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+}
+.topHeaderLeft,
+.dropdown-btn{
+    color: #fff;
 }
 
 .topHeaderLeft .bx,
@@ -58,7 +65,10 @@ body::-webkit-scrollbar-thumb{
     border: none;
     cursor: pointer;
     padding: 8px 12px;
-    color: #fff;
+    /* color: #fff; */
+}
+.dropdown-btn i{
+    font-size: small;
 }
 .dropdown-content{
     display: none;
@@ -94,7 +104,7 @@ body::-webkit-scrollbar-thumb{
     top: 0;
     right: 0;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0,0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.4);
     width: 100%;
     z-index: 9999;
     padding: 10px 100px;
@@ -176,7 +186,7 @@ header .container{
     width: 100px;
 }
 .searchBox i{
-    font-size: 22px;
+    font-size: 2px;
     cursor: pointer;
 }
 .searchBox.active{

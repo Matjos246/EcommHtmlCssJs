@@ -1,5 +1,5 @@
 // AOS Animation
-AOS.init(duration=1000, once=true);
+AOS.init({duration:1000, once:true});
 
 // mobile menu
 const hamburger = document.getElementById("hamburgerBtn")
@@ -20,9 +20,7 @@ const menu = document.querySelector(".menu")
  document.addEventListener("click", ()=>{
     dropdowns.forEach(d=>d.classList.remove('active'));
  })
-
  //search button animation
-
  const searcBtn = document.getElementById('searchBtn');
   const searchBox = document.getElementById('searchBox');
    const closeSearch = document.getElementById('closeSearch');
@@ -30,5 +28,11 @@ const menu = document.querySelector(".menu")
    searcBtn.onclick=()=>{
     searchBox.classList.add('active');
     searcBtn.classList.add('hide')
+   }
+
+   closeSearch.onclick=()=>{
+      searchBox.classList.remove('active');
+      searcBtn.classList.remove("hide");
+
    }
 
