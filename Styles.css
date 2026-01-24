@@ -292,3 +292,12 @@ header .container{
     background: var(--primary-color);
     color: var(--white);
 }
+.slide img{
+    width: 480px;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+}
