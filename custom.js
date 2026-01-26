@@ -36,3 +36,10 @@ const menu = document.querySelector(".menu")
 
    }
 
+   //hero section
+   new swiper(".mySwiper",{
+      loop:true,
+      autoplay:{delay:3000, disableOnInteraction:false},
+      pagination:{el:".swiper-pagination", clickable:true},
+   });
+
