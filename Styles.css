@@ -343,9 +343,9 @@ img{
 
 /* Category-grid */
 .category-grid{
-    display: flex;
+    display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-     grid-template-columns:auto auto;
+     /* grid-template-columns:auto auto; */
      grid-gap: 20px;
 }
 .big-banner{
@@ -422,6 +422,7 @@ img{
     padding: 4px 10px;
     font-size: 13px;
     border-radius: 3px;
+
 }
 .card-text{
     position: absolute;
@@ -443,4 +444,57 @@ img{
     font-size: 15px;
     text-decoration: none;
     font-weight: 500;
+}
+/* .features filter products */
+.featureProductFilter{
+    /* this  workslike container that envelope a content while the justify content works or affectwhat is inside the container*/
+    text-align: center;
+    padding: 50px;   
+}
+.product-image span{
+ 
+}
+
+
+.section-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.filter-menu{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.filter-menu button{
+    padding: 10px 22px;
+    margin: 0 5px;
+    background: #eee;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: progress;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* There diff btw .filter .active and .filter, .active */
+.filter-menu .active{
+  background-color: var(--primary-color);
+    color: var(--white);
+}
+.product-grid{
+   display: grid;
+   grid-template-columns:repeat(4, 1fr); 
+   gap:25px;
+}
+.product-card{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    position: relative;
+    transition: 0.3s ease;
+    opacity: 1;
+    text-align: left;
 }
