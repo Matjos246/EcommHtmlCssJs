@@ -499,5 +499,7 @@ img{
     text-align: left;
 }
 .product-card.hide{
-    
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
 }
