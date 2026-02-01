@@ -603,3 +603,9 @@ img{
     color: #777;
     font-size: 14px;
 }
+
+/* Top banner static */
+.banner-wrapper{
+    display: flex;
+    gap: 24px;
+}
