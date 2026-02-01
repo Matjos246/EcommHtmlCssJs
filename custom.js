@@ -43,3 +43,16 @@ const menu = document.querySelector(".menu")
       pagination:{el:".swiper-pagination", clickable:true},
    });
 
+   //product feature filter
+
+   document.querySelectorAll('.filter-menu button').forEach(btn=>{
+      btn.addEventListener("click",()=>{
+         document.querySelector('.filter-menu .active')?.classList.remove("active");
+         btn.classList.add('active');
+         const filter = btn.dataset.filter
+         document.querySelectorAll('.product-card').forEach(product=>{
+            product.classList.toggle("hide", filter !== "all" && product.dataset.category !==filter);
+         });
+      });
+   });
+
