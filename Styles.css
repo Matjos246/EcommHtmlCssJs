@@ -54,21 +54,17 @@ body::-webkit-scrollbar-thumb{
 .topHeaderLeft .dropdown-btn{
     color: #fff;
 }
-
 .topHeaderLeft .bx,
 .topHeaderRight .bx{
    font-size: 20px;
     vertical-align: middle;
 }
-
 .cartLabel{
     color: #f1f1f1;
 }
-
 .bx-chevron-down{
     color: #f1f1f1;
 }
-
 .dropdown{
     position: relative;
 }
@@ -99,8 +95,6 @@ body::-webkit-scrollbar-thumb{
     color: var(--black);
     text-decoration: none;
     padding: 10px 15px;
-    
-
 }
 .dropdown-content a:hover{
     background: var(--primary-color);
@@ -547,7 +541,6 @@ img{
     flex-direction: row;
     gap: 8px;
     transition: 0.5s;
-
 }
 .product-card:hover .hover-buttons{
     bottom: 20px;
@@ -562,7 +555,6 @@ img{
     font-size: 14px;
     transition: 0.3s;
 }
-
 .hover-buttons button:hover{
     color: #34a853;
     background: var(--white);
@@ -576,6 +568,7 @@ img{
     font-size: 20px;
     font-weight: 600;
     min-height: 45px;
+    margin: 0 15px 10px;
 
 }
 .rating{
@@ -603,9 +596,109 @@ img{
     color: #777;
     font-size: 14px;
 }
-
 /* Top banner static */
 .banner-wrapper{
     display: flex;
     gap: 24px;
+}
+.banner{
+    flex: 1;
+    border-radius: 12px;
+    padding: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.manBanner,
+.womenBanner{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.manBanner::before,
+.womenBanner::before{
+    position: absolute;
+    content:"";
+    inset: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.45s ease;
+    transform: scale(1.12);
+    
+}
+.banner-content{
+    position: relative;
+}
+
+.banner-content p{
+    margin: 0;
+}
+ .banner-content h2{
+   margin: 6px 0;
+   font-size: 40px;
+   font-weight: 700;
+}
+.offer{
+    margin: 6px 0 18px;
+    font-size: 18px;
+}
+.banner-img{
+    width: 42%;
+    object-fit: contain;
+}
+.banner:hover img{
+    transform: scale(1.12);
+}
+.featureCategoriesSection{
+    padding: 50px;
+}
+
+.featureCategoriesSection .swiper{
+    width: 100%;
+    background: transparent;
+    max-width: 1200px;
+    height: 350px;
+    padding: 25px 0;
+}
+.category{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px rgba(180, 129, 129, 0.8);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.category-card:hover{
+    transform: translateY(-5px);
+
+}
+.category-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #f6f6f6;
+}
+.cat-info{
+    padding: 12px;
+}
+
+.cat-info h4{
+   margin: 0;
+   font-size: 18px;
+   font-weight: 600;
+}
+.cat-info p{
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.6;
+
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: #000;
+    font-weight: bold;
+    
 }

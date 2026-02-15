@@ -39,13 +39,12 @@ const menu = document.querySelector(".menu")
    //hero section
    new swiper(".mySwiper",{
       loop:true,
-      autoplay:{delay:3000, disableOnInteraction:false},
+      autoplay:{delay:300, disableOnInteraction:false},
       pagination:{el:".swiper-pagination", clickable:true},
    });
 
-   //product feature filter
-
-   document.querySelectorAll('.filter-menu button').forEach(btn=>{
+   //product feature filter...
+   document.querySelectorAll('.filter-menu button').forEach(btn => {
       btn.addEventListener("click",()=>{
          document.querySelector('.filter-menu .active')?.classList.remove("active");
          btn.classList.add('active');
@@ -56,3 +55,17 @@ const menu = document.querySelector(".menu")
       });
    });
 
+   // feature slider
+   new Swiper('.mySwiper1', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {delay:2000, disableOnInteraction:false},
+      navigation: {nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev"},
+      // breakpoints{
+      //    0:{slidesPerView:1},
+      //    400:{slidesPerView:2},
+      //    768:{slidesPerView:3},
+      //    1024:{slidesPerView:5},
+      // },
+   }) ;
