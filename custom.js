@@ -86,3 +86,14 @@ const menu = document.querySelector(".menu")
          1024:{slidesPerView:7},
       },
    }) ;
+
+   // scroll Effect
+   window.addEventListener("scroll", ()=>{
+      const scrollY = window.scrollY;
+      document.getElementById("mainHeader")?.classList.toggle("fixed", scrollY > 100)
+
+      const backBtn = document.getElementById("backToTop");
+      if(backBtn) backBtn.style.display = scrollY > 300 ? "block" : "none"
+   });
+
+   document.getElementById("backToTop")?.addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));

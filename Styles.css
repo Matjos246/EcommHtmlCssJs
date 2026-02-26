@@ -810,15 +810,134 @@ img{
     display: flex;
     background: #ffff;
     border-radius: 100px;
+    /* border: solid thin brown; */
     padding: 5px;
     width: 330px;
 }
 .newsletter-input input{
     flex: 1;
-    border: none;
+    border: thick;
     padding: 12px 15px;
     border-radius: 90px;
     cursor: pointer;
     font-weight: 600;
 }
+.newsletter-input button{
+    background: #0000;
+    /* color: #ffff; */
+    /* border: none; */
+    border: solid thin brown;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
 
+.newsletter-input button:hover{
+    transform: translateX(-5px);
+    background-color: rgb(212, 92, 92);
+    color: #eee;
+}
+/* footer */
+#backToTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index:999;
+    /* background: var(--primary-color); */
+    color: var(--white);
+    padding: 10px 11px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50px; 
+    cursor: grab;
+    /* display: none; */
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+
+}
+#backToTop:hover{
+    background-color: rgb(180, 139, 139);
+}
+
+#backToTop .bx{
+    font-size: 24px;
+}
+
+.footer{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    /* background: url(/eomm\ screenshot.png); */
+      display: flex; 
+    flex-wrap: wrap;
+}
+.footer-column{
+    flex: 1;
+}
+.footer-column h3{
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-column ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li{
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer-column ul li:hover{
+    color: #000;
+}
+.contact-info{
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-info bx{
+   font-size: 20px;
+}
+.contact-info div{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom{
+   border-top: 1px solid #e4e4e4;
+   padding: 20px;
+   display: flex; 
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+   max-width: var(--max-width);
+   margin: auto;
+   font-size: 14px;
+   color: #666;
+}
+
+.footer-bottom img{
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+@media(max-width:768px){
+    /* Video minutes 1hr 30min */
+    .container{
+         max-width: 100%;
+        }
+    .topHeader{
+        display: none;
+    }
+}
