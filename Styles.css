@@ -387,7 +387,7 @@ img{
 
 }
 .card{
-    position: relative;
+    /* position: relative; */
     border-radius:20px;
     overflow: hidden;
 }
@@ -934,7 +934,9 @@ img{
 
 /* Media Responsiveness */
 @media(max-width:390px){
-    
+    .card{
+
+    }
 }
 @media(max-width:768px){
     /* Video minutes 1hr 30min */
