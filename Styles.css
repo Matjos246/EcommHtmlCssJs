@@ -30,8 +30,7 @@ body::-webkit-scrollbar-thumb{
 .topHeader{
     background: var(--primary-color);
     padding: 5px;
-    font-size: 15px;
- 
+    font-size: 15px; 
 }
 
 .topHeader .container{
@@ -40,8 +39,6 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     align-items: center;
 }
-
-
 .topHeaderLeft,
 .topHeaderRight{
     display: flex;
@@ -135,6 +132,7 @@ header .container{
     font-size: 20px;
     font-weight: bold;
     color: rgb(186, 140, 53, 0.5);
+   align-items: center;
 }
 .menu li{
   list-style: none;
@@ -387,7 +385,7 @@ img{
 
 }
 .card{
-    /* position: relative; */
+    position: relative;
     border-radius:20px;
     overflow: hidden;
 }
@@ -478,6 +476,7 @@ img{
 .product-grid{
    display: grid;
    grid-template-columns:repeat(4, 1fr); 
+ 
    gap:25px;
 }
 .product-card{
@@ -933,11 +932,34 @@ img{
 }
 
 /* Media Responsiveness */
-@media(max-width:390px){
-    .card{
 
-    }
+/* 500px */
+@media(max-width:500px){
+  .product-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-container{
+        /* justify-content: center; */
+  }
+
+.leftMenu #hamburger{
+    display: none;
 }
+
+.category-grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
+
+
+/* End of 500px */
 @media(max-width:768px){
     /* Video minutes 1hr 30min */
     .container{
@@ -1005,6 +1027,10 @@ img{
     text-align: center;
     height: auto;
     padding-top: 80px;
+     }
+
+     .btns{
+        padding: 30px;
      }
     .heroSection .Swiper{
         height: 600px;
@@ -1111,8 +1137,8 @@ img{
  }
 
  .product-card{
-    grid-template-columns: repeat(1,1fr);
-
+   display: flex;
+   flex-direction: column;
  }
  .banner-wrapper{
     flex-direction: column;
